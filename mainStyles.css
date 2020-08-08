@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+main{
+    padding:35px 3rem 0 3rem;
+    width: 100%;
+}
+
+/* .skill-boxes{
+    display:flex;
+    margin: 4rem 6rem;
+    justify-content: space-between;
+}
+
+.skill-box1{
+    max-width: 25vw;
+    max-height: 45vh;
+    border-style: double;
+    text-align: center;
+    
+} */
+
+.skillset{
+    text-align: center;
+   
+}
+
+.skill-boxes{
+    margin: 4rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap:2rem;
+}
+.skill-heading{
+    text-align: center;
+}
+section .experience{
+    display: block;
+}
+.exp-box{
+     display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 4rem 6rem;
+    gap: 4rem;
+    box-sizing: inherit;
+  
+}
+.exp-header{
+    text-align: center;
+}
+.experience-header{
+    text-align: center;
+}
+
+.contact-section{
+    margin: 4rem 6rem;
+}
+.contact-box{
+    padding-top: 2.5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4rem;
+
+}
+.social-contact{
+    
+    padding: 4vw 0;
+}
+.social-heading{
+    text-align: center;
+}
+.socials-icon{
+    padding:3vw 0;
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+}
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 3vh 0;
+}

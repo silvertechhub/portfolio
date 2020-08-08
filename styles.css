@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: fit-content;
+}
+header{
+    background-color:  #f5f5f5;
+   
+    height: auto;
+}
+nav{
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #81c784;
+}
+a:hover{
+   color: black;
+}
+.brand-name{
+    font-size: 3.5vh;
+    padding: 1.5vw 0 2vw 4vw ;
+}
+/*nav icon bars*/
+.bar1{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    border-radius: 2rem;
+    margin: 4px 0;
+}
+.bar2{
+    height: 2px;
+    width: 30px;
+    background-color: black;
+    border-radius: 2rem;
+    margin: 4px 0;
+}
+.bar3{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    border-radius: 2rem;
+    margin: 4px 0;
+}
+
+/*mobile nav*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a{
+    display: block;
+}
+
+
+
+.toggle{
+    order: 1;
+    font-size: 4vh;
+    padding-right: 6vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.nav-item{
+    padding: 10px;
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none; 
+}
+.active .nav-item{
+    display: block;
+}
+
+/*tab view*/
+@media all and (min-width:700px) {
+    .toggle{
+        display: none;
+    }
+    .nav-item{
+        position: relative;
+        display: block;
+        width: auto;
+    }
+    .skill{
+        left: 5vw;
+    }
+    .exp{
+        right: 1.5vw;
+    }
+    .contact{
+        right:7.5vw;
+    }
+}
+
+
+
+/*desktop view */
+
+@media all and (min-width:960px) {
+    .toggle{
+        display: none;
+    }
+    .nav-item{
+        position: relative;
+        display: block;
+        width: auto;
+    }
+    .skill{
+        left: 15vw;
+    }
+    .exp{
+        right: 1.5vw;
+    }
+    .contact{
+        right:16vw;
+    }
+}
+
+/*---------------------------end of navbar---------------------*/
+.intro{
+    background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 40rem;
+    position: relative;
+    padding: 7vw 15vw;
+    font-size: 3vh;
+    grid-template-columns: repeat(auto-fix, minmax(240px, 1fr));
+}
+.intro::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.25);
+   
+}
+/* .intro-img{
+   position: relative;
+   left: 25rem;
+   bottom: 20rem;
+   opacity: 0.5;
+    
+} */
+.myName{
+    font-size: 10vh;
+}
+.btns{
+    padding: 10px 20;
+    margin-top: 15px;
+    border-radius: 5rem;
+    background-color: cornflowerblue;
+
+}
+button.btns:hover{
+   background-color: cyan;
+}
+.social-icon{
+    display: flex;
+    margin-top: 3.4vh;
+    
+}
+.twitter{
+    padding-right:6vw;
+    color: dodgerblue;
+
+}
+.linkedin{
+    padding-right:6vw;
+    color: deepskyblue;
+}
+.github{
+    padding-right:2vw;
+    color: darkgray;
+    
+}
+.insta{
+    padding-left: 4vw;
+    color: lightsalmon;
+}
