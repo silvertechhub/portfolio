@@ -30,7 +30,9 @@ main{
     text-align: center;
    
 }
-
+.html-image{
+    padding: 2rem 5rem;
+}
 .skill-boxes{
     margin: 4rem 6rem;
     display: grid;
@@ -56,6 +58,9 @@ section .experience{
 }
 .experience-header{
     text-align: center;
+}
+.exp-image{
+    padding-left: 8rem;
 }
 
 .contact-section{
